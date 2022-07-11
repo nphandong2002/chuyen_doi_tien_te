@@ -18,7 +18,7 @@ public class appmain {
         map.put("usd",23000);
         map.put("eur",23783);
         map.put("jpy",17163);
-        if(map.containsKey(type)){
+        if(map.equals(type)){
             return ResponseEntity.ok(type+ ": "+map.get(type).intValue()+"=> "+ map.get(type).intValue() * money);
         }
         return ResponseEntity.ok("khong tim thay");
